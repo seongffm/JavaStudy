@@ -145,8 +145,8 @@ public class RoleDao {
 			}
 			return list;
 		}
-			
-		 
+
+		 //끝
 
 }
 
