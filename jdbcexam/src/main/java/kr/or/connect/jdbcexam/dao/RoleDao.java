@@ -127,8 +127,10 @@ public class RoleDao {
 			e.printStackTrace();
 		}
 		String sql = "SELECT description, role_id FROM role order by role_id desc";
+		
 		try (Connection conn = DriverManager.getConnection(dburl,dbuser,dbpassword);
 				PreparedStatement ps = conn.prepareStatement(sql)
+						
 				){ 
 			try(ResultSet rs = ps.executeQuery()) {
 				while(rs.next()) {
@@ -148,5 +150,48 @@ public class RoleDao {
 
 		 //끝
 
+	public int updateRole(Role role) {
+		int insertCount=0;
+		Connection conn=null;
+		PreparedStatement ps =null;
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			conn = DriverManager.getConnection(dburl,dbuser,dbpassword);
+			String sql = "UPDATE role SET description=? WHERE role_id=?";
+			ps = conn.prepareStatement(sql);
+			ps.setInt(2, role.getRoleId());
+			ps.setString(1, role.getDescription());
+			
+			insertCount = ps.executeUpdate();
+		}catch (Exception ex) {
+			ex.printStackTrace();
+		}finally {
+			
+		
+			
+		if(ps!=null) {
+			try {
+				ps.close();
+			} catch (Exception ex) {
+				
+				ex.printStackTrace();
+			}
+			
+		   }
+		
+	if(conn!=null) {
+		try {
+			conn.close();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		
+	   }
+	}
+	
+	
+		return insertCount;
+	}
 }
 
