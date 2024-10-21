@@ -12,5 +12,5 @@
 [![Java](https://img.shields.io/badge/Java-v11.0.10-blue)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) [![Spring](https://img.shields.io/badge/Spring-v5.3.6-green)](https://spring.io/) [![SQL](https://img.shields.io/badge/SQL-v1.0.0-orange)](https://www.mysql.com/)
 
 ## 📝 학습 내용 정리
-
-[학습 내용 정리하기](https://mellow-draw-cb8.notion.site/11aa3442e1d48049a2d5ea6065973281?v=11aa3442e1d48148af83000cfea6b5a0)
+[![Notion](https://img.shields.io/badge/Notion-v2.0.0-white?style=flat&logo=notion&logoColor=black)](https://mellow-draw-cb8.notion.site/11aa3442e1d48049a2d5ea6065973281?v=11aa3442e1d48148af83000cfea6b5a0)
+(https://mellow-draw-cb8.notion.site/11aa3442e1d48049a2d5ea6065973281?v=11aa3442e1d48148af83000cfea6b5a0)
