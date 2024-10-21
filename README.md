@@ -13,4 +13,4 @@
 
 ## 📝 학습 내용 정리
 [![Notion](https://img.shields.io/badge/Notion-v2.0.0-white?style=flat&logo=notion&logoColor=black)](https://mellow-draw-cb8.notion.site/11aa3442e1d48049a2d5ea6065973281?v=11aa3442e1d48148af83000cfea6b5a0)
-(https://mellow-draw-cb8.notion.site/11aa3442e1d48049a2d5ea6065973281?v=11aa3442e1d48148af83000cfea6b5a0)
+[학습 내용 정리한 노션 링크](https://mellow-draw-cb8.notion.site/11aa3442e1d48049a2d5ea6065973281?v=11aa3442e1d48148af83000cfea6b5a0)
