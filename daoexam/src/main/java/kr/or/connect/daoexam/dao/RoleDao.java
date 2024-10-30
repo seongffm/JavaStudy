@@ -32,4 +32,26 @@ public class RoleDao {
 	public List<Role> selectAll(){
 		return jdbc.query(SELECT_ALL, Collections.emptyMap(), rowMapper);
 	}
+	public int insert(Role role) {
+		SqlParameterSource params = new BeanPropertySqlParameterSource(role);
+		return insertAction.execute(params);
+	}
+	public int update(Role role) {
+		SqlParameterSource params = new BeanPropertySqlParameterSource(role);
+		return jdbc.update(UPDATE, params);
+	}
+	public int deleteById(Integer id) {
+		Map<String, ?> params = Collections.singletonMap("role_Id", id);
+		return jdbc.update(DELETE_BY_ROLE_ID, params);
+	}
+	
+	public Role selectById(Integer id) {
+		try {
+			Map<String, ?> params = Collections.singletonMap("role_Id", id);
+			return jdbc.queryForObject(SELECT_BY_ROLE_ID, params, rowMapper);		
+		}catch(EmptyResultDataAccessException e) {
+			return null;
+		}
+	}
+	
 }
