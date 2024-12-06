@@ -12,3 +12,5 @@
 
 [![Java](https://img.shields.io/badge/Java-v11.0.10-blue)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) [![Spring](https://img.shields.io/badge/Spring-v5.3.6-green)](https://spring.io/) [![SQL](https://img.shields.io/badge/SQL-v1.0.0-orange)](https://www.mysql.com/)
 
+## 자바 버전 바꾸기
+.bat파일이용해서 cmd창에서 set_java8.bat /set_java17.bat
